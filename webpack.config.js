@@ -7,7 +7,7 @@ module.exports = {
     main: path.resolve(__dirname, 'src/index.js'),
   },
   output: {
-    path: path.resolve(__dirname, 'dst'),
+    path: path.resolve(__dirname, 'dist'),
     filename: '[name].js',
     clean: true,
     assetModuleFilename: '[name][ext]',
@@ -25,7 +25,7 @@ module.exports = {
   module: {
     rules: [
       {
-        test: /\.scss$/,
+        test: /\.css$/,
         use: [
           'style-loader',
           'css-loader',

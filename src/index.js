@@ -1,30 +1,38 @@
-import './style.css';
-import getData from './modules/get.js';
-import postData from './modules/post.js';
-import validate from './modules/validate.js';
+import './styles/styles.css';
+import Score from './modules/score.js';
 
-const url = 'https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/24c0c3c116974ac49488d4eb0267bbc3/scores/';
+let scoreArr = [];
+if (JSON.parse(localStorage.getItem('scores'))) {
+  scoreArr = JSON.parse(localStorage.getItem('scores'));
+} else {
+  scoreArr = localStorage.setItem('scores', JSON.stringify([]));
+}
 
-const refreshBtn = document.querySelector('#refreshBtn');
-refreshBtn.addEventListener('click', () => {
-  getData(url);
+const scoreList = document.querySelector('.scoreList');
+const nameInput = document.querySelector('.nameInput');
+const scoreInput = document.querySelector('.scoreInput');
+const submit = document.querySelector('.submit');
+
+const render = () => {
+  scoreList.innerHTML = null;
+  const local = JSON.parse(localStorage.getItem('scores'));
+  local.forEach((elem) => {
+    const scoreCard = document.createElement('li');
+    scoreCard.classList.add('eachScore');
+    scoreCard.innerHTML = `${elem.name}: ${elem.score}`;
+    scoreList.appendChild(scoreCard);
+  });
+};
+
+submit.addEventListener('click', () => {
+  const eachScore = new Score(nameInput.value, scoreInput.value);
+  nameInput.value = '';
+  scoreInput.value = '';
+  scoreArr = JSON.parse(localStorage.getItem('scores'));
+  scoreArr.push(eachScore);
+  localStorage.setItem('scores', JSON.stringify(scoreArr));
+  render();
 });
 
-const form = document.querySelector('form');
-form.addEventListener('submit', (e) => {
-  e.preventDefault();
-  const nameInput = document.querySelector('#name').value;
-  const scoreInput = document.querySelector('#score').value;
-
-  if (!nameInput || !scoreInput) {
-    validate();
-  }
-
-  const data = {
-    user: nameInput.trim(),
-    score: scoreInput,
-  };
-
-  postData(url, data);
-  form.reset();
-});
+window.addEventListener('load', render());
+// window.addEventListener("load", c(scoreArr));

@@ -98,6 +98,7 @@ button:active {
   background-color: rgb(49, 24, 71);
   color: white;
   padding: 0.6em 1em;
+  width: 100%;
 }
 
 .score-display {
@@ -236,6 +237,7 @@ form input:focus {
     width: 450px;
     order: 1;
   }
+
   .notif {
     font-size: 2.5rem;
     padding: 1em 0 1em;

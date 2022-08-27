@@ -229,7 +229,7 @@ form input:focus {
     width: 55%;
   }
 
-  form {    
+  form {     
     display: flex;
     flex-direction: column;
     align-items: flex-end;

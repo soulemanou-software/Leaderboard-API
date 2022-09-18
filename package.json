@@ -1,10 +1,12 @@
 {
+  "homepage": "https://soulemanou-software.github.io/Leaderboard-API",
   "name": "webpack-boilerplate",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "private": true,
   "scripts": {
+    "predeploy": "npm run build",
     "test": "echo \"Error: no test specified\" && exit 1",
     "watch": "webpack --watch",
     "start": "webpack serve --open",
@@ -22,6 +24,7 @@
     "eslint-config-airbnb-base": "^14.2.1",
     "eslint-plugin-import": "^2.26.0",
     "express": "^4.18.1",
+    "gh-pages": "^4.0.0",
     "hint": "^7.1.1",
     "html-webpack-plugin": "^5.5.0",
     "style-loader": "^3.3.1",
@@ -36,7 +39,6 @@
   },
   "dependencies": {
     "express": "^4.18.1",
-    "gh-pages": "^4.0.0",
     "lodash": "^4.17.21",
     "webpack": "^5.74.0",
     "webpack-dev-middleware": "^5.3.3"

@@ -10,8 +10,8 @@ The leaderboard website displays scores submitted by different players. It also 
   - javascript
 
 - Technologies used
- - webpack
- - linter
+  - webpack
+  - linter
  
 ### Live server
 
@@ -36,7 +36,7 @@ To get a local copy up and running follow these simple example steps.
 - `npm install --save-dev hint@6.x`
 - `npm install --save-dev stylelint@13.x stylelint-scss@3.x stylelint-config-standard@21.x stylelint-csstree-validator@1.x`
 ### Usage
-- use to input user name and scores
+- used to input user name and scores
 - organised user information
 
 ### Run the following tests:

@@ -1,13 +1,43 @@
 # Leaderboard-API-service.
 ## description 
 The leaderboard website displays scores submitted by different players. It also allows you to submit your score. All data is preserved thanks to the external Leaderboard API service.
-### To get a local copy up and running follow these simple example steps.
 
-- Clone this repo to your machine by using Git clone: Git clone `https://github.com/soulemanou software/Leader-Board`
+## Built With
+
+- Major languages
+  - Html 
+  - css
+  - javascript
+
+- Technologies used
+ - webpack
+ - linter
+ 
+### Live server
+
+Check the live demo here [Live demo](https://fastdevz.me/Leaderboard-API/)
+## Getting Started
+
+To get a local copy up and running follow these simple example steps.
+### Prerequisites
+- A browser 
+- Webpack installed (if not install use this Guide to install it) [Webpack installation](https://webpack.js.org/guides/)
+- stable internet.
+
+### Setup
+#### Clone this repo to your machine by using Git clone: 
+- Git clone `https://github.com/soulemanou software/Leader-Board`
 - open in your vs code terminal and run live server
+
+### Install
+#### In your vs code terminal do the following:
+
 - `npm install -g @lhci/cli@0.7.x`
 - `npm install --save-dev hint@6.x`
 - `npm install --save-dev stylelint@13.x stylelint-scss@3.x stylelint-config-standard@21.x stylelint-csstree-validator@1.x`
+### Usage
+- use to input user name and scores
+- organised user information
 
 ### Run the following tests:
 
@@ -15,9 +45,8 @@ The leaderboard website displays scores submitted by different players. It also 
 - `npx stylelint "\*_/_.{css,scss}"`
 - `npx eslint .`
 
-### Live server
-
-Check the live demo here [Live demo](https://fastdevz.me/Leaderboard-API/)
+### Deployment
+> This webapp is deployed in the github pages
 
 ## Authors
 

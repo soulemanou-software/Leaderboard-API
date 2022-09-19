@@ -1,6 +1,7 @@
 # Leaderboard-API-service.
+## description 
 The leaderboard website displays scores submitted by different players. It also allows you to submit your score. All data is preserved thanks to the external Leaderboard API service.
-## To get a local copy up and running follow these simple example steps.
+### To get a local copy up and running follow these simple example steps.
 
 - Clone this repo to your machine by using Git clone: Git clone `https://github.com/soulemanou software/Leader-Board`
 - open in your vs code terminal and run live server
@@ -16,14 +17,14 @@ The leaderboard website displays scores submitted by different players. It also 
 
 ### Live server
 
-Check the live demo here [LINK](https://fastdevz.me/Leaderboard-API/)
+Check the live demo here [Live demo](https://fastdevz.me/Leaderboard-API/)
 
 ## Authors
 
-👤 **soulemanou kunchiefuh**
+👤 **SOULEMANOU KUNCHIEFUH BABANOU**
 
 - GitHub: [@githubhandle](https://github.com/soulemanou-software)
-- Twitter: [@twitterhandle](https://twitter.com/fastdevz1)
+- Twitter: [@twitterhandle](https://twitter.com/Mr_Babanou_237)
 - LinkedIn: [LinkedIn](https://www.linkedin.com/in/https://www.linkedin.com/in/soulemanou-kunchiefuh-babanou-454099196/)
 
 ## 🤝 Contributing

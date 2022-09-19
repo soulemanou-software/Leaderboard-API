@@ -16,7 +16,7 @@ The leaderboard website displays scores submitted by different players. It also 
 
 ### Live server
 
-Check the live demo here [LINK](https://soulemanou-software.github.io/LeaderBoard-API/)
+Check the live demo here [LINK](https://fastdevz.me/Leaderboard-API/)
 
 ## Authors
 
